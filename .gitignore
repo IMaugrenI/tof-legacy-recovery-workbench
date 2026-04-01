@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+01_intake/
+02_evidence/
+03_hypotheses/
+04_extracts/
+05_mapping/
+06_review/
+07_reports/

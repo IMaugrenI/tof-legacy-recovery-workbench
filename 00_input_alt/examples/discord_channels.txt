@@ -1,0 +1,7 @@
+category: onboarding
+channel: #general
+channel: #rules
+role: admin
+role: moderator
+permission: manage_messages
+reaction role onboarding guild server

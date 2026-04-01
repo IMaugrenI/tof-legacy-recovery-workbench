@@ -1,0 +1,8 @@
+services:
+  werkbank:
+    build: .
+    container_name: tof_legacy_recovery_workbench
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: ["tof-workbench", "run", "--repo-root", "/app"]

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+export POSTGRES_DSN=postgres://db
+python -m services.tof_bot.main

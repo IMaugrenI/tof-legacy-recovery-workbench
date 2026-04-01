@@ -1,0 +1,13 @@
+services:
+  bot:
+    image: tof/bot
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      POSTGRES_DSN: postgres://x
+      REDIS_URL: redis://redis:6379/0
+  postgres:
+    image: postgres:16
+  redis:
+    image: redis:7
