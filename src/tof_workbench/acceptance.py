@@ -4,12 +4,16 @@ from collections import Counter
 from pathlib import Path
 
 from .io_utils import read_json, write_json
+from .intake import IGNORED_INPUT_FILENAMES
 
 TARGET_CLASSES = {'discord', 'bot', 'repo', 'review_required'}
 
 
 def run_acceptance(repo_root: Path) -> dict:
-    input_files = [path for path in (repo_root / '00_input_alt').rglob('*') if path.is_file()]
+    input_files = [
+        path for path in (repo_root / '00_input_alt').rglob('*')
+        if path.is_file() and not (len(path.relative_to(repo_root / '00_input_alt').parts) == 1 and path.name in IGNORED_INPUT_FILENAMES)
+    ]
     intake_files = list((repo_root / '01_intake').glob('*.json'))
     mapping_files = [path for path in (repo_root / '05_mapping').glob('*.json') if path.name != 'mapping_suggestions.json']
     review_files = list((repo_root / '06_review').glob('*.json'))

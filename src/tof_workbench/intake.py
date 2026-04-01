@@ -10,15 +10,24 @@ from .models import IntakeRecord
 from .pathing import sanitize_rel_path, source_id_for_rel_path
 
 TEXT_EXTENSIONS = {'.txt', '.md', '.py', '.json', '.yml', '.yaml', '.ini', '.sh', '.html', '.cfg'}
+IGNORED_INPUT_FILENAMES = {'README.md', 'README_DE.md'}
 
 
 async def run_intake(repo_root: Path) -> list[IntakeRecord]:
     input_root = repo_root / '00_input_alt'
     output_root = repo_root / '01_intake'
     ensure_dir(output_root)
-    files = [p for p in input_root.rglob('*') if p.is_file()]
+    files = [
+        p for p in input_root.rglob('*')
+        if p.is_file() and not is_input_metadata_file(p, input_root)
+    ]
     tasks = [asyncio.to_thread(analyze_file, path, input_root, output_root) for path in files]
     return await asyncio.gather(*tasks)
+
+
+def is_input_metadata_file(path: Path, input_root: Path) -> bool:
+    rel = path.relative_to(input_root)
+    return len(rel.parts) == 1 and rel.name in IGNORED_INPUT_FILENAMES
 
 
 def analyze_file(path: Path, input_root: Path, output_root: Path) -> IntakeRecord:
