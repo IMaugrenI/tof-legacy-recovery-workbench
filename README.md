@@ -2,59 +2,13 @@
 
 > English is the primary text in this repository. A German clone is available in `README_DE.md`.
 
-Public-safe recovery workbench baseline for reading older mixed material, separating useful substance, and mapping results into stable target classes.
+Public_safe recovery workbench for older mixed material.
 
-## At a glance
+I use this repo to show how I separate evidence, preserve provenance, and avoid false certainty during recovery work.
 
-- reads legacy input from `00_input_alt/`
-- builds append-only JSON artifacts across fixed stages
-- detects Discord, bot, and repo/runtime signals
-- splits mixed findings instead of collapsing them into one truth
-- maps results into stable target classes:
-  - `discord`
-  - `bot`
-  - `repo`
-  - `review_required`
-- does **not** generate target code by default
+## start_here
 
-## Why this repo exists
-
-This repository is a public baseline for a recovery/workbench pattern:
-
-- intake older or mixed sources
-- preserve provenance
-- separate evidence from interpretation
-- keep uncertainty visible
-- prepare reusable substance without pretending it is already active runtime truth
-
-## What this repo is
-
-- a reduced technical workbench baseline
-- a runnable demo pipeline
-- a public-safe example of legacy recovery and mapping discipline
-
-## What this repo is not
-
-- not the private working corpus
-- not the full internal recovery space
-- not runtime truth
-- not automatic code generation
-- not a blind migration tool
-
-## Pipeline stages
-
-1. `00_input_alt/` – legacy input material
-2. `01_intake/` – intake records per source
-3. `02_evidence/` – neutral evidence layer
-4. `03_hypotheses/` – open-set hypothesis bundles
-5. `04_extracts/` – split extraction artifacts
-6. `05_mapping/` – mapping into stable target classes
-7. `06_review/` – review-required records
-8. `07_reports/` – summary, duplicates, acceptance
-
-## Quick start
-
-### Local
+### local
 
 ```bash
 python -m venv .venv
@@ -63,31 +17,51 @@ pip install -e .
 tof-workbench run
 ```
 
-### Docker
+### docker
 
 ```bash
 docker compose up --build werkbench
 ```
 
-## Demo input
+## what_this_repo_does
 
-The repository contains only public-safe fictional examples:
+1. reads legacy input from `00_input_alt/`
+2. builds append_only JSON artifacts across fixed stages
+3. detects Discord, bot, and repo_runtime signals
+4. splits mixed findings instead of collapsing them into one truth
+5. maps results into stable target classes
+6. keeps review_required cases visible
 
-- a Discord channel note bundle
-- a small bot module
-- a compose-like runtime fragment
-- an extensionless entrypoint file
+## why_this_matters
 
-## Key rules
+1. old material is often mixed, partial, or misleading
+2. provenance matters during recovery
+3. uncertainty should stay visible
+4. recovery is not the same thing as runtime truth
+5. default runs should not silently generate target code
 
-- files without an extension are first-class input
-- old hints are only hints, not truth
-- open-set detection does not create new target classes
-- target classes stay small and stable
-- the default run does not materialize target code
+## pipeline
 
-## Related public repos
+1. `00_input_alt/` = legacy input material
+2. `01_intake/` = intake records per source
+3. `02_evidence/` = neutral evidence layer
+4. `03_hypotheses/` = open hypothesis bundles
+5. `04_extracts/` = split extraction artifacts
+6. `05_mapping/` = mapping into stable target classes
+7. `06_review/` = review_required records
+8. `07_reports/` = summaries and acceptance
 
+## for_employers
+
+This repo is useful if you want to see how I handle:
+
+1. recovery of unclear legacy material
+2. evidence_vs_interpretation separation
+3. append_only thinking and provenance discipline
+4. cautious workflows that do not overclaim certainty
+
+## related_public_repos
+
+- [`tof_bridge_planning_method`](https://github.com/IMaugrenI/tof-bridge-planning-method) — planning baseline after recovery
 - [`tof_local_builder`](https://github.com/IMaugrenI/tof_local_builder) — local builder stack
-- [`tof_local_knowledge`](https://github.com/IMaugrenI/tof_local_knowledge) — on-prem local knowledge system
-- [`tof-bridge-planning-method`](https://github.com/IMaugrenI/tof-bridge-planning-method) — bridge-planning method layer
+- [`tof_local_knowledge`](https://github.com/IMaugrenI/tof_local_knowledge) — on_prem local knowledge system
