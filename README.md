@@ -2,9 +2,17 @@
 
 > English is the primary text in this repository. A German clone is available in `README_DE.md`.
 
-Public_safe recovery workbench for older mixed material.
+Public-safe recovery workbench for older mixed material.
 
 I use this repo to show how I separate evidence, preserve provenance, and avoid false certainty during recovery work.
+
+## why_this_repo_is_public
+
+I made this repo public because recovery work shows an important part of how I build.
+
+I do not want to flatten or beautify older material. I want to read it carefully, separate it cleanly, preserve provenance, and keep uncertainty visible.
+
+Recovery is not the same thing as runtime truth. This repo exists to show that I work methodically instead of mixing everything together.
 
 ## start_here
 
@@ -26,11 +34,11 @@ docker compose up --build werkbench
 ## what_this_repo_does
 
 1. reads legacy input from `00_input_alt/`
-2. builds append_only JSON artifacts across fixed stages
-3. detects Discord, bot, and repo_runtime signals
+2. builds append-only JSON artifacts across fixed stages
+3. detects Discord, bot, and repo-runtime signals
 4. splits mixed findings instead of collapsing them into one truth
 5. maps results into stable target classes
-6. keeps review_required cases visible
+6. keeps review-required cases visible
 
 ## why_this_matters
 
@@ -48,7 +56,7 @@ docker compose up --build werkbench
 4. `03_hypotheses/` = open hypothesis bundles
 5. `04_extracts/` = split extraction artifacts
 6. `05_mapping/` = mapping into stable target classes
-7. `06_review/` = review_required records
+7. `06_review/` = review-required records
 8. `07_reports/` = summaries and acceptance
 
 ## for_employers
@@ -56,12 +64,12 @@ docker compose up --build werkbench
 This repo is useful if you want to see how I handle:
 
 1. recovery of unclear legacy material
-2. evidence_vs_interpretation separation
-3. append_only thinking and provenance discipline
+2. evidence-vs-interpretation separation
+3. append-only thinking and provenance discipline
 4. cautious workflows that do not overclaim certainty
 
 ## related_public_repos
 
 - [`tof_bridge_planning_method`](https://github.com/IMaugrenI/tof-bridge-planning-method) — planning baseline after recovery
 - [`tof_local_builder`](https://github.com/IMaugrenI/tof_local_builder) — local builder stack
-- [`tof_local_knowledge`](https://github.com/IMaugrenI/tof_local_knowledge) — on_prem local knowledge system
+- [`tof_local_knowledge`](https://github.com/IMaugrenI/tof_local_knowledge) — on-prem local knowledge system
