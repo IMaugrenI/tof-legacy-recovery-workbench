@@ -6,7 +6,7 @@ Public-safe recovery workbench for older mixed material.
 
 I use this repo to show how I separate evidence, preserve provenance, and avoid false certainty during recovery work.
 
-## why_this_repo_is_public
+## Why this repo is public
 
 I made this repo public because recovery work shows an important part of how I build.
 
@@ -14,9 +14,9 @@ I do not want to flatten or beautify older material. I want to read it carefully
 
 Recovery is not the same thing as runtime truth. This repo exists to show that I work methodically instead of mixing everything together.
 
-## start_here
+## Start here
 
-### local
+### Local
 
 ```bash
 python -m venv .venv
@@ -25,13 +25,13 @@ pip install -e .
 tof-workbench run
 ```
 
-### docker
+### Docker
 
 ```bash
 docker compose up --build werkbench
 ```
 
-## what_this_repo_does
+## What this repo does
 
 1. reads legacy input from `00_input_alt/`
 2. builds append-only JSON artifacts across fixed stages
@@ -40,7 +40,7 @@ docker compose up --build werkbench
 5. maps results into stable target classes
 6. keeps review-required cases visible
 
-## why_this_matters
+## Why this matters
 
 1. old material is often mixed, partial, or misleading
 2. provenance matters during recovery
@@ -48,7 +48,7 @@ docker compose up --build werkbench
 4. recovery is not the same thing as runtime truth
 5. default runs should not silently generate target code
 
-## pipeline
+## Pipeline
 
 1. `00_input_alt/` = legacy input material
 2. `01_intake/` = intake records per source
@@ -59,7 +59,7 @@ docker compose up --build werkbench
 7. `06_review/` = review-required records
 8. `07_reports/` = summaries and acceptance
 
-## for_employers
+## For employers
 
 This repo is useful if you want to see how I handle:
 
@@ -68,8 +68,8 @@ This repo is useful if you want to see how I handle:
 3. append-only thinking and provenance discipline
 4. cautious workflows that do not overclaim certainty
 
-## related_public_repos
+## Related public repos
 
-- [`tof_bridge_planning_method`](https://github.com/IMaugrenI/tof-bridge-planning-method) — planning baseline after recovery
+- [`tof-bridge-planning-method`](https://github.com/IMaugrenI/tof-bridge-planning-method) — planning baseline after recovery
 - [`tof_local_builder`](https://github.com/IMaugrenI/tof_local_builder) — local builder stack
 - [`tof_local_knowledge`](https://github.com/IMaugrenI/tof_local_knowledge) — on-prem local knowledge system
