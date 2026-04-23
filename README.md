@@ -1,10 +1,28 @@
 # tof-legacy-recovery-workbench
 
-> English is the primary text in this repository. A German clone is available in `README_DE.md`.
+> English is the primary text in this repository. A German mirror is available in `README_DE.md`.
 
 Public-safe recovery workbench for older mixed material.
 
 I use this repo to show how I separate evidence, preserve provenance, and avoid false certainty during recovery work.
+
+## What this repo is
+
+This repository is a public method / transition repo for disciplined recovery of older mixed material.
+
+## Who it is for
+
+This repo is for technical readers who want to see how unclear or mixed legacy material can be separated carefully before planning or implementation.
+
+## What it is not
+
+This repo is not runtime truth, not implementation, and not a silent release path into target code.
+
+## Where to go next
+
+- `tof-showcase` — public architecture and product-line overview
+- `tof-bridge-planning-method` — planning after recovery
+- `tof-v7-public-frame` — tighter boundary reading for the later public frame
 
 ## Why this repo is public
 
