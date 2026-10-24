@@ -28,17 +28,30 @@ Die Stufen trennen Beobachtung bewusst von Interpretation.
 
 ## Erster lokaler Lauf
 
+Einmal klonen:
+
 ```bash
 git clone https://github.com/IMaugrenI/tof-legacy-recovery-workbench.git
 cd tof-legacy-recovery-workbench
+```
 
-python -m venv .venv
+### Linux / macOS
+
+```bash
+python3 -m venv .venv
 source .venv/bin/activate
-pip install -e .
+python -m pip install -e .
 tof-workbench run
 ```
 
-Unter Windows aktivierst du die virtuelle Umgebung vorher mit dem normalen PowerShell-/Command-Prompt-Befehl.
+### Windows PowerShell
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -e .
+tof-workbench run
+```
 
 ## Docker-Alternative
 
