@@ -28,17 +28,30 @@ The stages deliberately separate observations from interpretation.
 
 ## First local run
 
+Clone once:
+
 ```bash
 git clone https://github.com/IMaugrenI/tof-legacy-recovery-workbench.git
 cd tof-legacy-recovery-workbench
+```
 
-python -m venv .venv
+### Linux / macOS
+
+```bash
+python3 -m venv .venv
 source .venv/bin/activate
-pip install -e .
+python -m pip install -e .
 tof-workbench run
 ```
 
-On Windows, use the normal PowerShell/Command Prompt virtual-environment activation command before `pip install -e .`.
+### Windows PowerShell
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -e .
+tof-workbench run
+```
 
 ## Docker alternative
 
