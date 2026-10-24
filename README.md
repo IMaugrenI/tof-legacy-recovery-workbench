@@ -36,14 +36,7 @@ Recovery is not the same thing as runtime truth. This repo exists to show that I
 
 ## Start here
 
-### Local
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -e .
-tof-workbench run
-```
+For the platform-specific local setup (Linux/macOS/Windows), use [START_HERE.md](START_HERE.md).
 
 ### Docker
 
