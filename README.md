@@ -2,6 +2,8 @@
 
 > English is the primary text in this repository. A German mirror is available in `README_DE.md`.
 
+> **New here?** Start with [START_HERE.md](START_HERE.md). It explains what belongs in the recovery input, what the pipeline produces, and what must stay review-only.
+
 Public-safe recovery workbench for older mixed material.
 
 I use this repo to show how I separate evidence, preserve provenance, and avoid false certainty during recovery work.

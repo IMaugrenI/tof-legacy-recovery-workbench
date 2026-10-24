@@ -2,6 +2,8 @@
 
 > Die englische Hauptfassung liegt in `README.md`.
 
+> **Neu hier?** Starte mit [START_HERE_DE.md](START_HERE_DE.md). Dort steht, was in den Recovery-Eingang gehört, was die Pipeline erzeugt und was review-only bleiben muss.
+
 Public-safe Recovery-Werkbank für älteres, gemischtes Material.
 
 Ich nutze dieses Repo, um zu zeigen, wie ich Evidenz trenne, Herkunft bewahre und falsche Sicherheit während der Recovery-Arbeit vermeide.
